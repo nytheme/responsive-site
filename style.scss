@@ -1,0 +1,143 @@
+@import "compass";
+
+.img{
+    width: 100%;
+    height: 250px;
+    object-fit: cover; //アスペクト比自動調整
+}
+$keyColor: #7ABF01;
+
+#center {
+  margin: 40px;
+  h2{
+    font-size: 1.6rem;
+    margin: {
+      top: 30px;
+      bottom: 30px;
+    }
+    font-weight: bold;      
+    text-align: center;
+  }
+  .container {
+   @include display-flex;
+    justify-content: space-between; //両サイドのアイテムはそれぞれ端に、残りのアイテムを等間隔
+   @include flex-direction(column);  //ボックスを縦に並べる
+  }
+  .box {
+    @include flex(1);
+    margin: 0 10px;
+    padding: 20px;
+    @include border-radius(4px);
+    @include box-sizing(border-box);
+    @include display-flex;
+  }
+  h3 {
+    background-color: $keyColor;
+    padding: {
+      top: 10px;
+      bottom: 10px;
+    }
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+  }
+  p {
+    line-height: 1.5em;
+    padding: 10px;
+    background-color: #FFDD93;
+  }
+} // #center
+#bottom {
+  padding-bottom: 20px;
+  background-color: $keyColor;
+    h2{
+      padding: {
+        top: 30px;
+        bottom: 10px;
+      }
+      font-weight: bold;      
+      text-align: center;
+    }
+.button {
+    margin: {
+      left: auto;
+      right: auto;
+      bottom: 20px;
+    }
+    text-align: center;
+    padding: 10px 0;
+    width: 180px;
+    display: block;
+    color: #FFF;
+    font-weight: bold;
+    background-color: #FF4D60;
+    @include border-radius(4px);
+    font-size: 1rem;
+  }
+}      
+#middle{
+   margin: 40px;
+h2{
+    font-size: 1.6rem;
+    margin: {
+      top: 30px;
+      bottom: 30px;
+    }
+    font-weight: bold;      
+    text-align: center;
+  }
+}  
+
+.flex-box {
+  display: -webkit-flex;
+  display:         flex;
+  @include flex-direction(column);  //ボックスを縦に並べる
+  div {
+    margin: {
+      top:0; 
+      right: 10px;
+      bottom: 30px;
+    }
+    padding: 0;
+    background-color: #FFDD93;
+  }
+
+h3 {
+  padding: {
+      top: 10px;
+      bottom: 10px;
+    }
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-align: center;
+  background-color: $keyColor;
+}
+p{
+  line-height: 1.5em;
+  padding: 10px;
+ }
+}
+// desktop
+@media (min-width: 769px) {
+  
+  .img{
+    max-width: 100%;
+    height: 500px;
+  }
+  
+  .flex-box {
+      @include flex-direction(row);     // ボックスを横に並べる
+    }
+    div {
+      @include flex(1);                 // ボックスの幅を揃える
+      margin: 0 20px;                   // 左右にマージン
+    }
+  
+  #bottom {
+    .button{
+      &:hover {
+      background-color: darken(#FF4D60, 10%);
+      }
+    }
+  }
+}
