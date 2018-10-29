@@ -5,6 +5,13 @@
     height: 250px;
     object-fit: cover; //アスペクト比自動調整
 }
+
+#object-fit-img { //IE・edgeでobject-fitを表示する
+  object-fit: cover;
+  object-position: bottom;
+  font-family: 'object-fit: cover; object-position: bottom;'
+}
+
 $keyColor: #7ABF01;
 
 #middle{
@@ -73,7 +80,7 @@ p{
     display: block;
     color: #FFF;
     font-weight: bold;
-    background-color: #FF4D60;
+    background-color: #B53744;
     @include border-radius(4px);
     font-size: 1rem;
   }
@@ -88,6 +95,7 @@ p{
   }
   
   .flex-box {
+    //@include flex(1);
       @include flex-direction(row);     // ボックスを横に並べる
     }
     div {
@@ -98,7 +106,7 @@ p{
   #bottom {
     .button{
       &:hover {
-      background-color: darken(#FF4D60, 10%);
+      background-color: darken(#B53744, 10%);
       }
     }
   }

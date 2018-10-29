@@ -8,9 +8,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css">
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+    <script src="js/ofi.min.js"></script>
   </head>
   <body>
-    <img src="./images/img.jpg" alt="写真" class="img">
+    <img src="./images/img.jpg" alt="写真" class="img" id="object-fit-img">
 
     <section id="middle">
     <h2>日本の自然</h2>
@@ -31,7 +32,8 @@
     </section>
     <section id="bottom">
       <h2>テキスト</h2>
-      <span class="button">ボタン</span>
+      <button class="button">ボタン</button>
     </section> 
+    <script>objectFitImages();</script>
   </body>
 </html>

@@ -3,68 +3,10 @@
   height: 250px;
   object-fit: cover; }
 
-#center {
-  margin: 40px; }
-  #center h2 {
-    font-size: 1.6rem;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    font-weight: bold;
-    text-align: center; }
-  #center .container {
-    display: -webkit-flex;
-    display: flex;
-    justify-content: space-between;
-    -webkit-flex-direction: column;
-    flex-direction: column; }
-  #center .box {
-    -webkit-flex: 1;
-    flex: 1;
-    margin: 0 10px;
-    padding: 20px;
-    -moz-border-radius: 4px;
-    -webkit-border-radius: 4px;
-    border-radius: 4px;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    display: -webkit-flex;
-    display: flex; }
-  #center h3 {
-    background-color: #7ABF01;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    font-size: 1.2rem;
-    font-weight: bold;
-    text-align: center; }
-  #center p {
-    line-height: 1.5em;
-    padding: 10px;
-    background-color: #FFDD93; }
-
-#bottom {
-  padding-bottom: 20px;
-  background-color: #7ABF01; }
-  #bottom h2 {
-    padding-top: 30px;
-    padding-bottom: 10px;
-    font-weight: bold;
-    text-align: center; }
-  #bottom .button {
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 20px;
-    text-align: center;
-    padding: 10px 0;
-    width: 180px;
-    display: block;
-    color: #FFF;
-    font-weight: bold;
-    background-color: #FF4D60;
-    -moz-border-radius: 4px;
-    -webkit-border-radius: 4px;
-    border-radius: 4px;
-    font-size: 1rem; }
+#object-fit-img {
+  object-fit: cover;
+  object-position: bottom;
+  font-family: "object-fit: cover; object-position: bottom;"; }
 
 #middle {
   margin: 40px; }
@@ -97,6 +39,30 @@
     line-height: 1.5em;
     padding: 10px; }
 
+#bottom {
+  padding-bottom: 20px;
+  background-color: #7ABF01; }
+  #bottom h2 {
+    padding-top: 30px;
+    padding-bottom: 10px;
+    font-weight: bold;
+    text-align: center; }
+  #bottom .button {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    text-align: center;
+    padding: 10px 0;
+    width: 180px;
+    display: block;
+    color: #FFF;
+    font-weight: bold;
+    background-color: #B53744;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    font-size: 1rem; }
+
 @media (min-width: 769px) {
   .img {
     max-width: 100%;
@@ -112,6 +78,6 @@
     margin: 0 20px; }
 
   #bottom .button:hover {
-    background-color: #ff1a32; } }
+    background-color: #8e2b35; } }
 
 /*# sourceMappingURL=style.css.map */
